@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="keywords" content="Post 1 Headline">
+  <meta name="description" content="">
+  <title>Post 1 Detail</title>
+  <link rel="stylesheet" href="../css/nicepage.css" media="screen">
+  <link rel="stylesheet" href="../css/Post-Template.css" media="screen">
+  <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+  <link
+    id="u-theme-google-font" rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i"
+  >
+  <meta name="theme-color" content="#478ac9">
+</head>
+<body class="u-body u-xl-mode" data-lang="en">
+<div id="app">
+  <header
+    style="background-color: white; z-index: 100 ;position: sticky; top: 0; box-shadow: -1px 3px 7px 1px whitesmoke;"
+    class="u-clearfix u-header u-header"
+  >
+    <div class="u-clearfix u-sheet u-sheet-1">
+      <a
+        href="#" class="u-align-left u-image u-logo u-image-1"
+        data-image-width="3000"
+        data-image-height="3000"
+      >
+        <img :src="logo" class="u-logo-image u-logo-image-1" alt="">
+      </a>
+    </div>
+  </header>
+  <section class="u-align-center u-clearfix u-section-1" id="sec-bc14">
+    <div class="u-clearfix u-sheet u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-sheet-1">
+      <div class="u-container-style u-expanded-width u-post-details u-post-details-1">
+        <div class="u-container-layout u-valign-middle u-container-layout-1">
+          <img
+            :alt="thumbnail"
+            class="u-blog-control u-expanded-width u-image u-image-default u-image-1"
+            :src="thumbnail"
+          >
+          <h2 class="u-blog-control u-text u-text-1">{{ product_name }}</h2>
+          <div class="u-blog-control u-metadata u-metadata-1">
+            <span class="u-meta-date u-meta-icon">{{ category_name }}</span>
+          </div>
+          <div class="u-align-justify u-blog-control u-post-content u-text u-text-2 fr-view">
+            <div v-html="html_body"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer">
+    <div class="u-clearfix u-sheet u-sheet-1">
+      <p class="u-small-text u-text u-text-variant u-text-1">{{ copyright }}</p>
+    </div>
+  </footer>
+</div>
+</body>
+<script>
+    const {createApp} = Vue
+    createApp({
+        data() {
+            return {
+                logo: '../images/LAKAMOLogo.PNG',
+                copyright: 'រក្សាសិទ្ធដោយ Zorin.',
+                product_name: 'Water Tube Mask',
+                category_name: 'Mask',
+                thumbnail: 'image/water_tube_mask_thumbnail.jpg',
+                url: 'https://qrmetic.com/qrmetic/gms/public/product_detail/LAKAMO',
+                html_body:`
+                <p style="text-align: center; margin-top: -20px"><b>
+                <br>រូបមន្តនិងចំណុចពិសេសរបស់ perfect Brightening Day Cream ដែលជាឡេចឹញ្ចឹមនិងថែរក្សា ស្បែក
+                មុខ</b></p><p><b>👉ped Ginseng extract(យុិនសិនក្រហម)</b> ប្រឆាំងនឹងអុកសុីតកម្ម ជួយបំបាត់ស្ន
+                ាមជ្រួញ និងធ្វើអោយស្បែកម៉ត់រលោង&nbsp;</p><p><span style="font-size: 1rem;"><b>👉in
+                fraguard(ចម្រាញ់ចេញពីផ្កាឈូករ័ត្ន) </b>ប្រឆាំងនឹងអុកសុីតកម្ម ការពារកោសិកាស្បែកអោយមានសុខភាព
+                ល្អ ប្រឆាំងនឹងកាំរស្មីអ៊ីនហ្រ្វារ៉េដ&nbsp;</span></p><p><span style="font-size: 1rem;"><b>👉Vitamin C&nbsp; </b>ធ្វើអោ
+                យស្បែកភ្លឺថ្លានិងម៉ត់រលោងមានសំណើម ព្យាបាលនឹងបំបាត់រាល់ស្នាមមុននិងស្នាមអុជខ្មៅ</span><br></p><p><span style="font-size: 1rem;">
+                <b>👉Seven Berry Extrac (ចម្រាញ់ចេញពីផ្លែបឺរីទាំង 7ប្រភេទ)</b> កាត់បន្ថយការរលាករឺ អាលាក់ស៊ី ប្រឆាំងនឹងអុកសុីតកម្មជួយអោយក្មេ
+                ងជាងវ័យ</span></p><p><span style="font-size: 1rem;"><b>👉Pearl extract (គុជខ្យង) </b>ជួយបង្រួមរន្ធញើស
+                ជម្រុះកោសិកាចាស់ ប្រឆាំងនិងការរលាករឺរោល&nbsp;</span><br></p><p><span style="font-size: 1rem;"><b>👉Cent
+                ella asiatica extract</b>&nbsp;</span><span style="font-size: 1rem;">ធ្វើអោយស្បែកភ្លឺថ្លា ស្រស
+                ់ស្រាយ ម៉ត់រលោងតឹងមានសំណើម&nbsp;</span></p><p>👉<b>មានcollagen នឹងgluta</b> ជាច្រើនរួមបញ្ចូលនៅក្ន
+                ុងក្លងតែ១&nbsp;</p><p><span style="font-size: 1rem;"><b>វិធីប្រើ: </b>លាងមុខរួចលាបថ្មមៗលើផ្ទៃមុខរាល់
+                ព្រឹក ធ្វើអោយស្បែកភ្លឺ រលោងមានសំណើមក្មេងជាងវ័យក្នុងរយៈពេល៧ថ្ងៃ</span><br></p>
+                `
+            }
+        },
+    }).mount('#app')
+</script>
+</html>
